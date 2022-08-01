@@ -1,0 +1,431 @@
+/* css reset starts here  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* Css reset ends here  */
+
+/* GERERAL CSS  */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 12px;
+    line-height: 1.7;
+    font-family: 'Poppins',sans-serif;
+}
+::placeholder{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+}
+body p{
+    color: grey;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.middel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column wrap ;
+}
+.btn{
+    padding: 8px;
+    background: #E7573D;
+}
+.btn-2{
+    padding:8px 16px;
+    background: #E7573D;
+}
+
+span{
+    color: #E7573D;
+}
+
+/* section heading  */
+.section-heading-container{
+    text-align: center;
+    font-size: 14px;
+    padding:  0 25%;
+}
+.section-heading-container h2{
+    font-size: 24px;
+    font-weight: 700;
+   
+}
+.section-heading-container img{
+    margin: 10px 0;
+}
+
+section{
+    padding: 5% 0;
+}
+h4{
+    font-size: 18px;
+}
+/* GENERAL CSS ENDS HERE  */
+/* Custom css starts from here  */
+/* navigation  bar starts  from here  */
+
+#navigation-bar{
+    width: 100%;
+    position: absolute;
+    background:rgba(255,255,255,0.2);
+    z-index: 3;
+    
+}
+#navigation-bar .container{
+    padding: 16px 0;
+}
+
+#navigation-bar nav .logo-container .logo{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#navigation-bar nav .nav-menus li{
+    margin: 0  0 0 32px;
+}
+
+/* navigation bar  ends here  */
+
+/* Home section starts here  */
+main{
+    position: relative;
+}
+#home-section{
+    position: relative;
+    width: 100%;
+    height: 850.25px;
+    background: red;
+    padding: 0;
+}
+
+#home-section .video-wrapper{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;    
+}
+#home-section .video-wrapper video{
+    width: 100%;
+
+}
+#home-section .overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 850.25px;
+    background: rgba(17, 39, 55, 0.5);
+}
+#home-section .home-content{
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+   
+} 
+#home-section .home-content  p{
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+}
+
+#home-section .home-content h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+
+/* Home section ends here  */
+
+/* About section starts here  */
+#About-section{
+   padding:2% 0; 
+}
+
+#About-section .program-container{
+    width: 100%;
+    margin: 100px 0;
+}
+#About-section .program-container .program-col {
+    margin:  0 0 16px 0;
+    padding:  0 20px;
+}
+#About-section .program-container .program-col-1{
+    width: 50%;
+}
+#About-section .program-container .program-col-2{
+    width: 50%;
+}
+#About-section .program-container .program-col .article-content{
+    width: 75%;
+    height: 100%;
+    align-items: flex-start;
+}
+#About-section .program-container .program-col .article-content h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+#About-section .program-container .program-col .article-content a{
+    color: #E7573D;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* About section ends here  */
+
+/* Membership section starts here  */
+#Membership-container{
+    width: 100%;
+    height:300px;
+    background: url('../cta-bg.jpg');
+    background-size:cover;
+}
+#Membership-container .content{
+    text-align: center;
+    color: #fff;
+    padding: 25%;
+}
+#Membership-container .content h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+#Membership-container .content p{
+    color: #fff;
+    margin: 10px 0 30px 0;
+}
+
+/* Membership section ends here  */
+
+/* Classes section starts here  */
+.class-col-container {
+    margin: 50px 0 0 0;
+    align-items: flex-start;
+}
+.class-col-container  .class-schedule {
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1) , -2px -2px 6px rgba(0,0,0,0.1);
+    margin: 0 0 20px 0;
+    justify-content: flex-start;
+}
+.schedule-title{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 0 0 10px;
+    color: #000;
+    padding:  0 0 0 20px;
+}
+.class-col-container  .class-col-1 .class-schedule .active-title{
+    color: #E7573D;
+}
+.class-col-container  .class-col-1 .class-schedule h4:hover{
+    color: #E7573D;
+}
+.class-col-container  .class-col-1  .schedule-btn-container{
+    background: #E7573D;
+    padding: 12px;
+    text-align: center;
+}
+.class-col-container  .class-col-1  .schedule-btn-container{
+    text-align: center;
+}
+.class-col-container  .class-col-1  .schedule-btn-container a{
+    font-size: 18px;
+    text-transform: none;
+}
+
+/* col-2 strart here  */
+.class-col-2{
+   width: 65%; 
+}
+.training-content img{
+    border-radius: 6px;
+}
+.training-content .schedule-title{
+    font-size: 20px;
+    padding: 0px;
+}
+.training-content p{
+    margin: 10px 0 20px 0;
+}
+
+/* Classes section ends here  */
+
+/* schedule bg section starts here  */
+#schedule-bg{
+    height: 100vh;
+    background: url("../schedule-bg.jpg");
+    color: #fff;
+   
+}
+
+#schedule-bg p{
+    color: #fff;
+}
+#schedule-bg H2{
+    color: #fff;
+}
+.schedule-form-container{
+    text-align: center;
+    margin:50px 0 0 0;
+
+}
+.schedule-form-container .working-week a{
+    padding: 0 10px;
+}
+.schedule-form-container .working-week  .active-day{
+    color: #E7573D;
+}
+#schedule-bg table {
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+#schedule-bg table th,td{
+    border: 1px solid #fff;
+    border-spacing: 0px;
+    padding:24px;
+   
+}
+/* Schedule bg  section ends here  */
+
+/* Trainer section starts here  */
+#Expert-Training .profile-container{
+    margin: 50px 0 0  0;
+}
+#Expert-Training .profile-col{
+    width: 300px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1), -2px -2px 8px rgba(0,0,0,0.1);
+}
+#Expert-Training .profile-col img{
+    width: 100%;
+    object-fit: cover;
+} 
+#Expert-Training .profile-col a{
+    color: #E7573D;
+    font-weight: 500;
+    font-size: 11px;
+    margin: 10px 0;
+}
+#Expert-Training .profile-col .trainer-name{
+    font-size: 16px;
+    font-weight: 700;
+}
+#Expert-Training .profile-col p{
+    margin:   10px 0;
+}
+#Expert-Training .profile-col  .social-icons i{
+    margin: 0 10px 0 0 ;
+}
+/* traniner section ends here  */
+
+/* Contact section starts here  */
+#contact-section{
+    width: 100%;
+    height: 60vh;
+    padding: 0px;
+ 
+}
+#contact-section .our-location{
+    width: 50%;
+    height: 100%;
+   
+
+}
+#contact-section figure  iframe{
+    width: 100%;
+    height: 100%;
+}
+#contact-section  .contact-form{
+    width: 50%;
+    height: 100%;
+    background: url('../contact-bg.jpg');
+    background: cover;
+    object-fit: cover;
+}
+#contact-section  .contact-form form{
+    background: #fff;
+    padding: 20px;
+}
+#contact-section  .contact-form form .input-box{
+    padding:8px;
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+    margin: 0 0 16px 0;
+}
+#contact-section  .contact-form form .userbox{
+    width: 48%;
+}
+/* Contact section ends here  */
+
+/* footer section starts here  */
+footer{
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color:#E7573D;
+}
+/* Footer section  ends here  */
